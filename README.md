@@ -1,4 +1,4 @@
-# Flutter para movil de cero a Expero por Fernando Herrera
+# Flutter para movil de cero a Experto por Fernando Herrera
 
 [Enlace la curso](https://cursos.devtalles.com/courses/take/flutter-movil-cero-a-experto)
 
