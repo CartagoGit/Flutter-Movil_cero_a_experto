@@ -21,4 +21,5 @@ void main() {
   print(pokemon.runtimeType);
   print(numeros.runtimeType == numeros.runtimeType);
   print(pokemon['isAlive'].runtimeType == true.runtimeType);
+
 }
