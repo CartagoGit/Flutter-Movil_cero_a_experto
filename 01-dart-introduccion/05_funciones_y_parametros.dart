@@ -9,6 +9,8 @@ void main() {
 }
 
 String greetEveryone() {
+  for (var a = 1; a < 3; a++) {}
+
   return 'Hello everyone!';
 }
 
@@ -18,6 +20,5 @@ int addTwoNumbers(int a, int b) => a + b;
 int addTwoNumbersOptionals(int a, [int b = 0]) => a + b;
 
 String greetSomeone(String name) {
-  return 'Hello $name! aro que';
-
+  return 'Hello $name! aro que ji';
 }
