@@ -1,4 +1,3 @@
-
 void main() {
   final numeros = {
     1,
@@ -21,5 +20,6 @@ void main() {
   print(pokemon.runtimeType);
   print(numeros.runtimeType == numeros.runtimeType);
   print(pokemon['isAlive'].runtimeType == true.runtimeType);
-
+  print(pokemon['isAlive'].runtimeType == false.runtimeType);
+  print('pero rula');
 }
