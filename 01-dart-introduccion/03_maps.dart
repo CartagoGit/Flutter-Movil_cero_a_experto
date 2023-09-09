@@ -18,4 +18,7 @@ void main() {
   print({pokemon, numeros, pokemon['nombre']});
   print(pokemon['sprites']['back']);
   print(pokemon['sprites'].runtimeType);
+  print(pokemon.runtimeType);
+  print(numeros.runtimeType == numeros.runtimeType);
+  print(pokemon['isAlive'].runtimeType == true.runtimeType);
 }
