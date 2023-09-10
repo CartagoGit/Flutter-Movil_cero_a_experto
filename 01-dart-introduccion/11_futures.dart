@@ -1,29 +1,42 @@
 void main() async {
   print('Inicio del main');
 
-  httpGet('Lo que sea')
+  httpGet(url: 'Lo que sea', time: 5)
       .then((value) => print(value))
       .catchError((onError) => print('Error en la petición: $onError'));
 
+  print(await httpGetConAsync(url: 'Con async', time: 1));
 
-
-  print(await httpGetConAsync('Con async'));
+  try {
+    final value = await httpGet(url: 'desde try an catch', time: 1);
+    print('exito: $value');
+  } on Error {
+    print('Hubo un Error');
+  } on Exception catch (e) {
+    print('Hubo una excepcion pero mostrandola $e');
+  } catch (e) {
+    print('fallo: $e');
+  } finally {
+    print('Fin try and catch');
+  }
   print('Fin del programa');
 }
 
 /**
  * ? Holi
  */
-Future<String> httpGet(String url) {
-  return Future.delayed(const Duration(seconds: 3), () {
+Future<String> httpGet({required String url, int time = 3}) {
+  return Future.delayed(Duration(seconds: time), () {
     // throw 'Error forzado';
-    return 'Hola mundo desde $url';
+    throw Exception('Error con expcecion o con lo que sea');
+    // throw Error();
+    // return 'Hola mundo desde $url';
   });
 }
 
-Future<String> httpGetConAsync(String url) async {
+Future<String> httpGetConAsync({required String url, int time = 3}) async {
   try {
-    return await Future.delayed(const Duration(seconds: 2), () {
+    return await Future.delayed(Duration(seconds: time), () {
       // throw 'Error forzado';
       return 'Hola mundo desde $url';
     });
