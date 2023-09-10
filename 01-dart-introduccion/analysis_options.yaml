@@ -1,0 +1,6 @@
+analyzer:
+    errors:
+        annotate_overrides: error
+linter:
+    rules:
+        - annotate_overrides
