@@ -6,6 +6,8 @@ void main() {
   print('Suma ${addTwoNumbersOptionals(2, 9)}');
 
   print(greetSomeone('Mario'));
+
+  print(greetPerson(message: 'Mensajito', name: 'Pepo'));
 }
 
 String greetEveryone() {
@@ -21,4 +23,8 @@ int addTwoNumbersOptionals(int a, [int b = 0]) => a + b;
 
 String greetSomeone(String name) {
   return 'Hello $name! aro que ji';
+}
+
+String greetPerson({required String name, String message = 'Hola'}) {
+  return '$message $name ${213213.toString()} y otro numero 213213';
 }
