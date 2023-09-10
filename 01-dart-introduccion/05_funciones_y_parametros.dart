@@ -11,7 +11,7 @@ void main() {
 }
 
 String greetEveryone() {
-  for (var a = 1; a < 3; a++) {}
+  for (int a = 1; a < 3; a++) {}
 
   return 'Hello everyone!';
 }
