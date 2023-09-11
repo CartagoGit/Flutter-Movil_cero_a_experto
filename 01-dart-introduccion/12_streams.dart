@@ -2,6 +2,13 @@ void main() {
   emitNumbers().listen((event) {
     print('desde listen $event');
   });
+
+  emitSomething().listen((event) => print('Esto es algo $event'),);
+}
+
+Stream<String> emitSomething() {
+  Stream<String> controller = Stream.empty();
+  return controller;
 }
 
 Stream emitNumbers() {
