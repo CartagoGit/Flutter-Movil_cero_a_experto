@@ -28,6 +28,9 @@ void main() async {
 Future<String> httpGet({required String url, int time = 3}) {
   return Future.delayed(Duration(seconds: time), () {
     // throw 'Error forzado';
+    // throw Pepote(){
+    //   print('algo');
+    // }
     throw Exception('Error con expcecion o con lo que sea');
     // throw Error();
     // return 'Hola mundo desde $url';
