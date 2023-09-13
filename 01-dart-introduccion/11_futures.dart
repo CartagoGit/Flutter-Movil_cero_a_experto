@@ -20,6 +20,8 @@ void main() async {
     print('Fin try and catch');
   }
   print('Fin del programa');
+
+  print(await getIntConAsync());
 }
 
 /**
@@ -45,5 +47,14 @@ Future<String> httpGetConAsync({required String url, int time = 3}) async {
     });
   } catch (e) {
     return 'Error: $e';
+  }
+}
+
+Future<int> getIntConAsync() async {
+  try {
+    return 1;
+  } catch (e) {
+    print('Un error al pillar los numericos -> $e');
+    return -1;
   }
 }
