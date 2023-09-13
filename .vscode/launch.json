@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "cwd": "00-flutter-prueba-inicial",
+            "name": "00-flutter-prueba-inicial",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "cwd": "00-flutter-prueba-inicial",
+            "flutterMode": "profile",
+            "name": "00-flutter-prueba-inicial (profile mode)",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "cwd": "00-flutter-prueba-inicial",
+            "flutterMode": "release",
+            "name": "00-flutter-prueba-inicial (release mode)",
+            "request": "launch",
+            "type": "dart"
+        }
+    ],
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0"
+}
